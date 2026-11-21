@@ -3,13 +3,13 @@
   "format": "CVAT for images 1.1",
   "guideline": "Road v1.0",
   "name": "daotuan",
-  "revision": 2,
-  "created_at": "2026-11-21T03:04:44+00:00",
+  "revision": 3,
+  "created_at": "2026-11-21T03:54:09+00:00",
   "files": [
     {
       "file": "daotuan-front.zip",
-      "bytes": 9569,
-      "sha256": "c24bd8e6263b2e4f549687103438660cd257cbd64bf4782b09b60bbe5c0eae6f",
+      "bytes": 9664,
+      "sha256": "24adfbfaabb1be6bb13ea874234197437d52055caa17fac1f097e900077a2159",
       "contains_images": false,
       "images": 16,
       "images_unlabelled": 0,
@@ -17,16 +17,16 @@
       "shapes_by_label": {
         "crosswalk": 6,
         "drivable": 31,
-        "lane": 50,
+        "lane": 52,
         "road_curb": 12,
-        "traffic_light": 45,
+        "traffic_light": 46,
         "traffic_sign": 51
       }
     },
     {
       "file": "daotuan-fisheye.zip",
-      "bytes": 6638,
-      "sha256": "aef88b95fc19e8cec866a9bb162798ffed28a2a621bee56ec40ed9c360c467e0",
+      "bytes": 6614,
+      "sha256": "6d25172d75f814405ede43d324ae0d86b4e432441edc813c5d7d1482ecad8e29",
       "contains_images": false,
       "images": 12,
       "images_unlabelled": 0,
@@ -43,7 +43,7 @@
   ],
   "lint": {
     "nặng": 3,
-    "chính": 6,
+    "chính": 7,
     "nhẹ": 0
   },
   "note": "Tạo bởi road_check lint. Mô tả file đã gửi, không phải kết luận chất lượng."
