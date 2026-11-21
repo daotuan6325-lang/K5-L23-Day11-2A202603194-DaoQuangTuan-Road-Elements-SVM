@@ -3,13 +3,13 @@
   "format": "CVAT for images 1.1",
   "guideline": "Road v1.0",
   "name": "daotuan",
-  "revision": 1,
-  "created_at": "2026-11-20T15:43:07+00:00",
+  "revision": 2,
+  "created_at": "2026-11-21T03:04:44+00:00",
   "files": [
     {
       "file": "daotuan-front.zip",
-      "bytes": 9155,
-      "sha256": "5d0d1a9e196fb4d2681d3bbeecfe0b073cb2f009197d4bc9fca2ddfbb4ce3144",
+      "bytes": 9569,
+      "sha256": "c24bd8e6263b2e4f549687103438660cd257cbd64bf4782b09b60bbe5c0eae6f",
       "contains_images": false,
       "images": 16,
       "images_unlabelled": 0,
@@ -18,15 +18,15 @@
         "crosswalk": 6,
         "drivable": 31,
         "lane": 50,
-        "road_curb": 4,
+        "road_curb": 12,
         "traffic_light": 45,
         "traffic_sign": 51
       }
     },
     {
       "file": "daotuan-fisheye.zip",
-      "bytes": 5136,
-      "sha256": "0aefb29c5d013d3cf7efbe2c8b170713240066ab13214fafe6e130b9efefb864",
+      "bytes": 6638,
+      "sha256": "aef88b95fc19e8cec866a9bb162798ffed28a2a621bee56ec40ed9c360c467e0",
       "contains_images": false,
       "images": 12,
       "images_unlabelled": 0,
@@ -35,7 +35,7 @@
         "crosswalk": 12,
         "drivable": 14,
         "lane": 11,
-        "road_curb": 7,
+        "road_curb": 17,
         "traffic_light": 9,
         "traffic_sign": 11
       }
