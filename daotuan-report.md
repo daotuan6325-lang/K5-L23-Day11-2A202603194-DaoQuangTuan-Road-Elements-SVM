@@ -1,8 +1,8 @@
 # Báo cáo cá nhân — Ngày 11
 Họ tên: Đào Quang Tuấn               Mã học viên: 2A202603194  
 Phiên bản CVAT (Help → About): 2.82.1  
-Guideline: Road v1.0    Lần nộp (`revision` trong manifest): 1  
-Thời điểm export (ngày giờ trên CVAT): 20/11/2026, 19:32    Số lần nộp lại sau Rework: 0  
+Guideline: Road v1.0    Lần nộp (`revision` trong manifest): 2  
+Thời điểm export (ngày giờ trên CVAT): 21/11/2026, 10:04 (revision 1: 20/11/2026, 19:32)    Số lần nộp lại sau Rework: 1  
 
 ## 1. Kiểm project
 | Mục | Đúng như guideline Road v1.0? | Ghi chú |
@@ -16,10 +16,10 @@ Cách đặt tag ảnh trên bản CVAT này: nút Setup tag ở thanh công c�
 ## 2. Số lượng đã gán
 | Task | Ảnh | lane | road_curb | crosswalk | drivable | traffic_light | traffic_sign |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| front | 12 | 36 | 4 | 4 | 23 | 37 | 36 |
-| front-extra (đã làm 4 / 4) | 4 | 14 | 0 | 2 | 8 | 8 | 15 |
-| fisheye | 8 | 10 | 6 | 8 | 10 | 8 | 10 |
-| fisheye-extra (đã làm 4 / 4) | 4 | 1 | 1 | 4 | 4 | 1 | 1 |
+| front | 12 | 36 | 11 | 4 | 23 | 37 | 36 |
+| front-extra (đã làm 4 / 4) | 4 | 14 | 1 | 2 | 8 | 8 | 15 |
+| fisheye | 8 | 10 | 14 | 8 | 10 | 8 | 10 |
+| fisheye-extra (đã làm 4 / 4) | 4 | 1 | 3 | 4 | 4 | 1 | 1 |
 
 ## 3. Bảng ca khó
 | Ảnh | Nhãn | Phân vân giữa | Đã chọn | Lý do |
@@ -36,11 +36,16 @@ Bạn kiểm lô của tôi: ____  Quyết định nhận được: ____
 | --- | ---: | --- | --- |
 |  |  |  |  |
 
+Đã sửa ở revision 2 (bản revision 1 cất trong `r1/`):
+- Bổ sung `road_curb` ở mép đường không sơn: A03, A04 (2), A08 (3), A11, A16, B02 (2), B03, B06, B07 (2), B08 (2), B10, B12 — front 4 → 12, fisheye 7 → 17 road_curb.
+- Chỉnh lại điểm cho sát hơn: B03 (drivable, road_curb), B04 (road_curb, crosswalk), B05 (crosswalk, road_curb), B07 (lane other), B12 (crosswalk).
+- Không đổi tag; lint sau khi sửa không có cảnh báo mới (9 cảnh báo đã biết: vạch đôi 2 polyline, A05/A09 không có vạch).
+
 ## 5. Kiểm file export
 | File | Mở lại được? | Số shape ảnh 1 (job / file) | Số shape ảnh 2 (job / file) | Tag camera có trong XML? |
 | --- | --- | --- | --- | --- |
 | daotuan-front.zip | Có (lint đọc được 16 ảnh) | A01: 9 / 9 | A02: 5 / 5 | Có (`front`) |
-| daotuan-fisheye.zip | Có (lint đọc được 12 ảnh) | B01: 4 / 4 | B02: 7 / 7 | Có (`fisheye_front`) |
+| daotuan-fisheye.zip | Có (lint đọc được 12 ảnh) | B01: 4 / 4 | B02: 9 / 9 | Có (`fisheye_front`) |
 
 ## 6. Ảnh chụp màn hình
 1. Tab Labels của project.  
